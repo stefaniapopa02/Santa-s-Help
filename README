@@ -1,0 +1,34 @@
+    Am impartit proiectul in mai multe clase intuitive, ghidandu-ma dupa formatul oferit in enunt.
+    Avem clasele delimitate clar in enunt:
+    ---Child -> mosteneste clasa ChildUpdate cu modificarile corespunzatoare fieacrui an
+    ---ChildUpdate
+    ---Gift
+    ---InitialData
+    ---Input
+    ---AnnualChanges
+    Acestea interactioneaza si sunt legate unele de celelalte: inputul contine datele initiale,
+care sunt compuse din copii si cadouri. Totodata, schimbarile anuale contin date depre copii, cadouri,
+dar si actualizari pentru anumiti copii.
+    Pe langa acestea, am mai avut nevoie de alte cateva clase:
+    ---OutpuChild -> clasa pe care am facut-o special pentru a genera output-ul in formatul dorit
+si regasit in fisierele ref
+    ---OutputGift -> clasa pe care am facut-o special pentru a genera output-ul in formatul dorit
+si regasit in fisierele ref
+    ---pentru afisarea output-ului exact in formatul regasit in ref-uri, avem:
+       --ARound - lista cu datele despre copii dupa o runda
+       --AllRounds - lista cu toate rundele, deci cu datele despre copii din toti anii
+    Pentru a integra design pattern uri si pentru a face modificarile necesare celei de a doua etape:
+    ---StrategyForAssGifts (interfata), StrategyFactory, StrategyId, StrategyNiceScore,
+    StrategyNiceScoreCity, AuxiliaryCityClass  -> pentru modul corect de asignare a cadourilor
+    ---AgeCategory (interfata), ChildrenFactory -> pentru delimitarea categoriilor de varsta ale copiilor
+    ---SingletonPattern (o singura instanta in main)
+    ---BuilderPattern (pentru lista de copii children)
+
+    ---Solver - ce contine de fapt rezolvarea proiectului, in care se urmaresc pasii flow-ului in vederea
+    unei implementari corecte si complete si care se foloseste de toate celelalte clase si de metodele lor
+
+    Toate clasele au constructori, getteri, setteri si desigur, alte functii trebuitoare.
+
+    In vederea implementarii proiectului am urmat pas cu pas flow-ul prezentat in enunt, folosindu-ma de
+campuri si metode cu nume sugestive pentru fiecare aspect in parte, dupa cum se poate observa in cod si integrand
+si cele 4 design pattern-uri regasite mai sus.
